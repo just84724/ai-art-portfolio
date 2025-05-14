@@ -15,7 +15,18 @@ import { AnimatePresence, motion } from "framer-motion";
 
 
 export default function App() {
-      
+  useEffect(() => {
+    const API_URL = import.meta.env.VITE_API_URL;
+
+    fetch(`${API_URL}/api/artworks`)
+      .then((res) => res.json())
+      .then((data) => {
+        setArtworks(data); // 存進 state
+      })
+      .catch((err) => {
+        console.error('Fetch error:', err);
+      });
+  }, []);
   return (
       
     
