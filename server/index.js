@@ -28,7 +28,7 @@ const artworks = [
 ];
 
 app.get('/api/images', (req, res) => {
-  res.json(images);
+  res.json(artworks);
 });
 
 app.listen(port, () => {
