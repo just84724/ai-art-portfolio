@@ -3,7 +3,9 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors());
-const port = 5000;
+
+// ✅ 使用 Render 指定的 port，否則預設 5000（本地用）
+const port = process.env.PORT || 5000;
 
 // 假設的 AI 藝術作品資料
 const artworks = [
@@ -17,7 +19,5 @@ app.get('/api/artworks', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+  console.log(`✅ Server is running on port ${port}`);
 });
-
-
