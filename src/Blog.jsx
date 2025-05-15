@@ -1,5 +1,5 @@
 import React from 'react';
-import './app.css';  // 加入faceIn動畫必須加入app.css
+import './App.css';  // 加入faceIn動畫必須加入app.css
 
 const blogPosts = [
   {
