@@ -14,17 +14,18 @@ export default function About() {
       </p>
 
       <p className="mb-4 text-lg leading-relaxed">
-        我的作品主題多為幻想風格、美少女、奇幻世界觀與情感表現，並經常嘗試跨模組風格融合。
+        我的作品主題多為動漫角色人物、原創角色，並經常嘗試跨模組風格融合。
         除了圖像創作，我也會撰寫相關紀錄與教學文章，分享創作過程與技巧。
       </p>
 
       <p className="mb-4 text-lg leading-relaxed">
-        技術方面，我熟悉 React、Node.js、Vite、前後端整合，也有使用過 Linux、SQL、PHP、Unity 等技術。
+        技術方面，目前正在熟悉 React、Node.js、Vite、前後端整合，也有使用過 Linux、SQL、PHP、Unity 等技術。
         目前正在建立這個網站作為我的個人作品展示與部落格平台。
       </p>
 
       <p className="text-lg leading-relaxed">
         歡迎來信或私訊交流創作想法！💬
+        郵件信箱:just84724@gmail.com
       </p>
       </div>
     </div>
