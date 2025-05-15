@@ -156,6 +156,7 @@ export default function Gallery() {
     
 
   return (
+    
     <div> 
     <div className="fade-in">   {/* 加入fadeIn動畫 */}
       <h1 className="text-4xl font-bold text-center mb-8">AI Art Gallery</h1>

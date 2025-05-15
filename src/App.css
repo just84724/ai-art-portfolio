@@ -1,9 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* 這樣可以避免 padding/邊框影響寬高計算*/
+}
 #root {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem; /* 手機上可適當縮小 padding */
   text-align: center;
-  overflow: hidden; /* 防止顯示滾動條 */
+  box-sizing: border-box; /* 確保 padding 不會影響總寬度 */
 }
 
 .logo {
@@ -33,7 +39,16 @@
     animation: logo-spin infinite 20s linear;
   }
 }
+@media (max-width: 600px) {
+  .thumbnail-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .thumbnail {
+    width: 80%; /* 根據容器縮小寬度 */
+  }
+}
 .card {
   padding: 2em;
 }
@@ -116,3 +131,7 @@
   object-fit: contain; /* 確保圖片保持比例 */
   cursor: pointer; /* 鼠標指向圖片時變成點擊手型 */
 }
+body {  /* CSS 限制畫面水平不被撐開 */
+  overflow-x: hidden;
+}
+
